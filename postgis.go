@@ -1,4 +1,4 @@
-package bun_postgis
+package bunpostgis
 
 import (
 	"database/sql/driver"
