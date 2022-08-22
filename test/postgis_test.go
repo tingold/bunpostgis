@@ -85,7 +85,9 @@ func TestAllGeometries(t *testing.T) {
 		if s2.GeoField.Geometry.GeoJSONType() != s.GeoField.Geometry.GeoJSONType() {
 			t.Fail()
 		}
-
+		if s2.GeoField.Geometry.Bound() != s.GeoField.Geometry.Bound() {
+			t.Fail()
+		}
 	}
 
 }
