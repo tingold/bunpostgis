@@ -4,7 +4,7 @@ import (
 	"context"
 	pgx "github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/stdlib"
-	bpg "github.com/tingold/bunpostgis"
+	"github.com/tingold/bunpostgis"
 	"github.com/uptrace/bun"
 	"github.com/uptrace/bun/dialect/pgdialect"
 	"log"

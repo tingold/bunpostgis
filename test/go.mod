@@ -1,9 +1,10 @@
-module github.com/tingold/bunpostgis/test
+module test
 
 go 1.19
 
 require (
 	github.com/jackc/pgx/v4 v4.17.0
+	github.com/tingold/bunpostgis v0.0.0-20220822192648-fade2fa651d7
 	github.com/uptrace/bun v1.1.7
 	github.com/uptrace/bun/dialect/pgdialect v1.1.7
 )

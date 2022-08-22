@@ -115,8 +115,8 @@ github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.8.0 h1:pSgiaMZlXftHpm5L7V1+rVB+AZJydKsMxsQBIJw4PKk=
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
-github.com/tingold/bun-postgis v0.0.0-20220822174746-6a6ce6f12d8d h1:LoIXy/FgNtK1TSuytvgItHKAqq0nWF+LQrTYrMxkIdM=
-github.com/tingold/bun-postgis v0.0.0-20220822174746-6a6ce6f12d8d/go.mod h1:YUYNQNIj8zdkDlEiI1PZBGLGZTq6Jim2vBycvtWFDZI=
+github.com/tingold/bunpostgis v0.0.0-20220822192648-fade2fa651d7 h1:6dHRvfJopQ2yOohRyPq9F1FJMp5NcxStaLqsa0ogJtI=
+github.com/tingold/bunpostgis v0.0.0-20220822192648-fade2fa651d7/go.mod h1:x2mvQdZtinRNhrnh1mDJMcTvTZjWAln92olQ/7lyJiI=
 github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc h1:9lRDQMhESg+zvGYmW5DyG0UqvY96Bu5QYsTLvCHdrgo=
 github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc/go.mod h1:bciPuU6GHm1iF1pBvUfxfsH0Wmnc2VbpgvbI9ZWuIRs=
 github.com/uptrace/bun v1.1.7 h1:biOoh5dov69hQPBlaRsXSHoEOIEnCxFzQvUmbscSNJI=
