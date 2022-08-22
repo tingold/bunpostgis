@@ -1,13 +1,12 @@
-package bunpostgis
+package bun_postgis
 
 import (
 	"database/sql/driver"
 	"encoding/hex"
 	"fmt"
-	"reflect"
-
 	"github.com/paulmach/orb"
 	"github.com/paulmach/orb/encoding/ewkb"
+	"reflect"
 )
 
 type PostgisGeometry struct {
