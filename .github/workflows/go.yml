@@ -1,0 +1,57 @@
+name: Build, Lint, Test
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - main      
+    paths:      
+      - "!**.md"
+      
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    container: golang
+    services:
+      postgres:
+        image: postgis/postgis
+        env:
+          POSTGRES_DB: bunpostgis
+          POSTGRES_USER: bunpostgis
+          POSTGRES_PASSWORD: bunpostgis
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.19
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: cd pkg && go build -v .      
+
+      - name: Lint
+        uses: golangci/golangci-lint-action@v2
+        with:
+          version: latest
+          working-directory: pkg
+          
+      - name: Test
+        uses: golangci/golangci-lint-action@v2
+        env:
+          PGUSER: bunpostgis
+          PGPASSWORD: bunpostgis
+          PGDATABASE: bunpostgis
+          PGPORT: 5432
+          PGHOST: postgres
+        with:
+          version: latest
+          working-directory: pkg
