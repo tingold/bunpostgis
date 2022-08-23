@@ -1,5 +1,5 @@
 # PostGIS support for Bun ORM
-[![Build, Lint, Test](https://github.com/tingold/bunpostgis/actions/workflows/go.yml/badge.svg)](https://github.com/tingold/bunpostgis/actions/workflows/go.yml)
+[![Build, Lint, Test](https://github.com/tingold/bunpostgis/actions/workflows/go.yml/badge.svg)](https://github.com/tingold/bunpostgis/actions/workflows/go.yml)  [![Go Report Card](https://goreportcard.com/badge/github.com/tingold/bunpostgis/pkg)](https://goreportcard.com/report/github.com/tingold/bunpostgis/pkg)
 
 This module provides a simple wrapper that allows [PostGIS](https://postgis.net/) geometry types to be used in [Bun](https://bun.uptrace.dev/).
 It builds on the awesome `ewkb` support already in [Orb](https://github.com/paulmach/orb). 
