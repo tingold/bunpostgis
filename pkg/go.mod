@@ -1,4 +1,4 @@
-module github.com/tingold/bunpostgis
+module github.com/tingold/bunpostgis/pkg
 
 go 1.19
 

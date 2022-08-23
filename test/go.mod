@@ -1,4 +1,4 @@
-module test
+module github.com/tingold/bunpostgis/test
 
 go 1.19
 
