@@ -21,9 +21,9 @@ func (g *PostgisGeometry) Scan(value interface{}) error {
 	var data []byte
 	var err error
 
-	switch value.(type) {
+	switch value := value.(type) {
 	case string:
-		data, err = hex.DecodeString(value.(string))
+		data, err = hex.DecodeString(value)
 		if err != nil {
 			return err
 		}
