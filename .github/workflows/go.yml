@@ -47,13 +47,10 @@ jobs:
           working-directory: .
           
       - name: Test
-        uses: golangci/golangci-lint-action@v2
         env:
           PGUSER: bunpostgis
           PGPASSWORD: bunpostgis
           PGDATABASE: bunpostgis
           PGPORT: 5432
           PGHOST: postgres
-        with:
-          version: latest
-          working-directory: .
+        run: go test
