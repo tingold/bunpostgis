@@ -1,0 +1,20 @@
+version: "3.9"
+
+x-networks: &x-networks
+  networks:
+    - backend
+
+networks:
+  backend:
+
+services:
+  postgresql_13:
+    <<: *x-networks
+    image: bitnami/postgresql:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRESQL_DATABASE: app
+      POSTGRESQL_PASSWORD: postgres
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
